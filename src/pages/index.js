@@ -5,11 +5,7 @@ import Layout from '../components/layout';
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <h1>Hi there! &nbsp;
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
+      <h2>Hi there!</h2>
       <p>
         I'm a front end web developer with 15+ years of commitment to helping 
         clients reach their goals and keeping internal teams communicating 

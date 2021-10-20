@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 const AboutPage = () => {
   return (
     <Layout pageTitle="About me">
-      <h1>So here's the thing...</h1>
+      <h2>So here's the thing...</h2>
       <p>
         I'm pretty into &nbsp;
         <span role="img" aria-label="cats">🐈</span> &nbsp;
@@ -17,4 +17,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default AboutPage;

@@ -1,7 +1,19 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://portfoliomain32081.gatsbyjs.io/",
     title: "Pat McGhen - Web Developer",
+    description: "My website, now on Gatsby."
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/portfolio`,
+      }
+    },
+  ],
 };
