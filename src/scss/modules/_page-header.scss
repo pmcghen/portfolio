@@ -1,0 +1,27 @@
+.page-header {
+  background-color: $page-header-background;
+  box-shadow: $bs;
+  color: $page-header-color;
+  padding: 1.5rem;
+
+  a {
+    color: $page-header-link-color;
+    padding: 0.66rem 0.33rem;
+    margin: 0.33rem;
+    
+    &::after {
+      bottom: 0.33rem;
+      transform: skew(-33deg);
+      right: unset;
+      width: 0;
+      transition: width 0.2s ease-out;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        transition: width 0.2s ease-in;
+      }
+    }
+  }
+}
