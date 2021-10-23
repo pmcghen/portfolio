@@ -1,0 +1,12 @@
+.tag {
+  background-color: $tag-background;
+  border: solid 1px $tag-border;
+  border-radius: 2rem;
+  color: $tag-color;
+  display: inline-block;
+  margin-left: 0.33rem;
+  margin-right: 0.15rem;
+  padding-left: 0.66rem;
+  padding-right: 0.66rem;
+  text-transform: uppercase;
+}

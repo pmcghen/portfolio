@@ -6,6 +6,7 @@ import Layout from '../../components/layout';
 
 const PortfolioPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
+  const tags = data.mdx.frontmatter.tags;
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <h2>{data.mdx.frontmatter.title}</h2>
@@ -17,6 +18,14 @@ const PortfolioPost = ({ data }) => {
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
+      <footer>
+        <span className="details">Technologies used:</span>
+        {tags.map((tag) => {
+          return [
+            <span key={tag} className="tag">{tag}</span>
+          ]
+        })}
+      </footer>
     </Layout>
   )
 };
@@ -33,6 +42,7 @@ export const query = graphql`
             gatsbyImageData
           }
         }
+        tags
       }
       body
     }

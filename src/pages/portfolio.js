@@ -16,7 +16,7 @@ const PortfolioPage = ({ data }) => {
                   {node.frontmatter.title}
                 </Link>
               </h3>
-              <span>Posted: {node.frontmatter.date}</span>
+              <span>{node.frontmatter.date}</span>
             </header>
             <p>{node.excerpt}</p>
           </article>
@@ -33,7 +33,7 @@ export const query = graphql`
       id
       frontmatter {
         title
-        date
+        date(formatString: "MMMM D, YYYY")
       }
       excerpt
       slug

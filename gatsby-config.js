@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://portfoliomain32081.gatsbyjs.io/",
-    title: "Pat McGhen - Web Developer",
-    description: "My website, now on Gatsby."
+    title: "Pat McGhen",
+    description: "Cat lover. Cyclist. Pizzaiolo. Web developer."
   },
   plugins: [
     "gatsby-plugin-sass",
