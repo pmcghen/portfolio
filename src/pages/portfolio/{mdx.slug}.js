@@ -10,7 +10,7 @@ const PortfolioPost = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <h2>{data.mdx.frontmatter.title}</h2>
-      <span>{data.mdx.frontmatter.date}</span>
+      <span>{data.mdx.frontmatter.timeline}</span>
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
@@ -36,6 +36,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        timeline
         hero_image_alt
         hero_image {
           childImageSharp {
