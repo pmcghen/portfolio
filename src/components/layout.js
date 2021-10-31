@@ -22,7 +22,7 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle}</title>
       <header className="page-header around">
         <div>
-          <h1>{data.site.siteMetadata.title}</h1>
+          <h1><Link to="/">{data.site.siteMetadata.title}</Link></h1>
           <span className="tagline">{data.site.siteMetadata.description}</span>
         </div>
         <div className="nav-container flex">
