@@ -1,9 +1,11 @@
 $bs: -0.33rem -0.25rem 0.97rem $light-blue;
+$body-font: 'Ubuntu', sans-serif;
+$heading-font: 'Rubik', sans-serif;
 
 body {
   background: $body-background;
   color: $body-color;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: $body-font;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -13,7 +15,7 @@ body {
 main {
   width: 90%;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -27,12 +29,16 @@ a {
   &::after {
     content: '';
     background-color: $link-border;
-    height: 0.4rem;
+    height: 0.2rem;
     position: absolute;
-    bottom: -0.125rem;
+    bottom: 0.12rem;
     left: 0;
     width: 100%;
   }
+}
+
+p {
+  margin-top: 0.25rem;
 }
 
 .flex {
@@ -48,5 +54,6 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: $heading-font;
   margin: 0;
 }

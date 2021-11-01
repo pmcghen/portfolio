@@ -21,15 +21,17 @@ const Layout = ({ pageTitle, children }) => {
     <>
       <title>{pageTitle}</title>
       <header className="page-header around">
-        <div>
-          <h1><Link to="/">{data.site.siteMetadata.title}</Link></h1>
-          <span className="tagline">{data.site.siteMetadata.description}</span>
-        </div>
-        <div className="nav-container flex">
+        <div class="flex">
           <StaticImage
             alt="Pat and B enjoying some offline time"
             src="../images/me.jpg"
             className="avatar" />
+          <div>
+            <h1><Link to="/">{data.site.siteMetadata.title}</Link></h1>
+            <span className="tagline">{data.site.siteMetadata.description}</span>
+          </div>
+        </div>
+        <div className="nav-container flex">
           <nav>
             <Link to="/">Home</Link>
             <Link to="/portfolio">Portfolio</Link>
@@ -40,8 +42,8 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className="page-footer">
-        <a href="https://github.com/pmcghen"><FontAwesomeIcon icon={faGithub} /></a>
-        <a href="https://linkedin.com/in/pmcghen"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="https://github.com/pmcghen"><FontAwesomeIcon icon={faGithub} aria-label="GitHub" /></a>
+        <a href="https://linkedin.com/in/pmcghen"><FontAwesomeIcon icon={faLinkedin} aria-label="LinkedIn" /></a>
       </footer>
     </>
   );
