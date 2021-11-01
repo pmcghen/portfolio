@@ -15,6 +15,16 @@ module.exports = {
         path: `${__dirname}/portfolio`,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+        `Rubik`,
+        `Ubuntu`,
+        ],
+        display: 'swap'
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
   ],
