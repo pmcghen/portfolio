@@ -1,0 +1,21 @@
+.card-container {
+  gap: 20px;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  a {
+    &::after {
+      display: none;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    width: 161px;
+    height: 161px;
+  }
+}

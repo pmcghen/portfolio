@@ -5,15 +5,10 @@
     font-size: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    transition: color 0.125s linear;
+    color: #fff;
 
     &::after {
       display: none;
-    }
-
-    &:hover {
-      color: $link-hover-color;
-      transition: color 0.125s linear;
     }
   }
 }
