@@ -21,7 +21,7 @@ const Layout = ({ pageTitle, children }) => {
     <>
       <title>{pageTitle}</title>
       <header className="page-header around">
-        <div class="flex">
+        <div className="flex">
           <StaticImage
             alt="Pat and B enjoying some offline time"
             src="../images/me.jpg"
@@ -38,7 +38,7 @@ const Layout = ({ pageTitle, children }) => {
           </nav>
         </div>
       </header>
-      <main>
+      <main className="wrapper">
         {children}
       </main>
       <footer className="page-footer">
